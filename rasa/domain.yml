@@ -1,0 +1,75 @@
+intents:
+- greet
+- thanks
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- hello_world
+- launch_application
+- search_web
+- place_search
+- inform
+- rating
+- address
+- opening_hours
+entities:
+- query
+- number
+slots:
+  address:
+    type: unfeaturized
+  location_match:
+    type: categorical
+    values:
+    - none
+    - one
+  number:
+    type: text
+  opening_hours:
+    type: unfeaturized
+  query:
+    type: text
+  rating:
+    type: unfeaturized
+templates:
+  utter_address:
+  - text: The address is {address}.
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye!
+  utter_greet:
+  - text: Hello!
+  utter_happy:
+  - text: Great carry on!
+  utter_no_results:
+  - text: Sorry, I couldn't find anything.
+  utter_opening_hours:
+  - text: The place is {opening_hours}
+  utter_rating:
+  - text: The rating is {rating}
+  utter_thanks:
+  - text: You are very welcome.
+  utter_what_radius:
+  - text: Within what radius?
+actions:
+- utter_address
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_no_results
+- utter_opening_hours
+- utter_rating
+- utter_thanks
+- utter_what_radius
+- action_hello_world
+- action_launch_application
+- action_place_search
+- action_search_web

@@ -1,0 +1,18 @@
+[
+  {
+    "text": "hello world",
+    "intent": "hello_world",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.26122853961711523
+    }
+  },
+  {
+    "text": "hi world",
+    "intent": "hello_world",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2771452451190038
+    }
+  }
+]
